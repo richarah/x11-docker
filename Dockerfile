@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:latest AS build-x11
 RUN apt-get install apt-transport-https -y && \
     apt-get update && apt-get upgrade -y && \
     apt-get install apt-utils x11-apps -y
